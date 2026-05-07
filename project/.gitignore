@@ -1,0 +1,29 @@
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Archivos comprimidos generados por Terraform (archive_file)
+*.zip
+
+# Ignore override files as they are usually used to override resources locally and not intended to be committed
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Node.js (Para tus funciones Lambda)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Archivos del sistema operativo (Opcional pero recomendado)
+.DS_Store
+Thumbs.db

@@ -113,7 +113,7 @@ resource "aws_route_table" "private_b" {
   vpc_id = aws_vpc.main.id
 
   route {
-    cidr_block     = "0.0.0.0/0"
+    cidr_block = "0.0.0.0/0"
     # Si hay 2 NATs usa el segundo, si hay 1, reutiliza el primero
     nat_gateway_id = var.nat_gateway_count == 2 ? aws_nat_gateway.nat[1].id : aws_nat_gateway.nat[0].id
   }
